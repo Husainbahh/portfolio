@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#background-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: 450px;
+    margin: auto;
+    background-color: rgb(59, 51, 51);
+    border-radius: 30px;
+}
+#modeImg {
+    display: block;
+    width: 40px;
+    margin: 15px auto auto;
+    cursor: pointer;
+}
+#myIMG{
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+.userinfo{
+    text-align: center;
+    color: aliceblue;
+}
+.logo{
+    margin-top: 20px;
+    border-top: 3px solid white;
+    padding: 30px;
+    text-align: center;
+}
+.logoicon{
+    display: inline-block;
+    margin-right: 5px;
+}
+.logoicon img{
+    width: 40px;
+}
+.btnportfolio{
+    text-align: center;
+}
+#btn{
+    color: black;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px 16px;
+    border-radius: 15px;
+    border: solid 2px;
+    animation: borderColorChange 2s linear infinite;
+}
+@keyframes borderColorChange {
+    25% {
+        border-top-color: cyan;
+        border-right-color: yellow;
+        border-bottom-color: green;
+        border-left-color: lightseagreen;
+        color: black;
+    }
+    50% {
+        border-top-color: lightseagreen;
+        border-right-color: cyan;
+        border-bottom-color: yellow;
+        border-left-color: green;
+        color: white;
+    }
+    75% {
+        border-top-color: green;
+        border-right-color: lightseagreen;
+        border-bottom-color: cyan;
+        border-left-color: yellow;
+        color: black;
+    }
+    100% {
+        border-top-color: yellow;
+        border-right-color: green;
+        border-bottom-color: lightseagreen;
+        border-left-color: cyan;
+        color: white;
+    }
+}
+.qr-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.qr-img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+}
+.qr-img img {
+    width: 250px;
+}
+
+.qr-container{
+    position: relative;
+    height: 100vh;
+}
+.qr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
